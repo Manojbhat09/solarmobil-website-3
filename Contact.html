@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>SolarMobil | Contact</title>
+<link rel="icon" type="image/x-icon" href="images/sm2.png" />
+<meta name="Contact" content="Our vision is to become a leading student center of research and development in the field of green transportation with a focus on solar passenger vehicles in the next five years.(Solar cars)" />
+<link href="styles/Contact.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script src="modernizr.custom.62143.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).on('resize',funciton(){
+  var self=$('html');
+  self.height( self.width() * (1080/1920))
+})
+  
+</script>
+
+
+<script type="text/javascript">
+  $(function(){
+ var shrinkHeader = 500;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('#top_nav').addClass('shrink');
+        }
+        else {
+            $('#top_nav').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset;
+    }
+});
+</script>
+
+<script type="text/javascript">
+  function validateEmail(email) { 
+  // http://stackoverflow.com/a/46181/11236
+  
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function validate(){
+  $("#result").text("");
+  var email = $("#email").val();
+  if (validateEmail(email)) {
+  } else {
+    $("#result").text(email + " is not valid ");
+    $("#result").css("color", "red");
+    return false;
+  }
+  return true;
+}
+
+$("form").bind("submit", validate);
+</script>
+
+
+
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+<div class="sorry show">
+  <img src="images/sorry.png">
+</div>
+</head>
+<body>
+
+<!-- HEADER START -->
+    <div >
+
+	<div id="top_nav" class="hide" >
+
+	<div class="bgimg" ><img src="images/foot3.png"/></div>
+  <img class="logo" src="images/sm1.png"/>
+    <img class="frimg" src="images/logo.png"/>
+ <ul class="main" >
+ 	<li class="menu">
+ 	<a target="_blank"href="Untitled-1.html" data-hover="HOME" class="hvr-grow">Home</a>
+  </li>	
+
+	<li class="menu">
+	<a target="_blank"href="About.html" data-hover="About us" class="hvr-grow">About us</a>
+	</li>
+
+	<li class="menu">
+
+	<a target="_blank"href="#" data-hover="PROJECTS" class="hvr-grow">Projects</a>
+    <span></span>
+  <ul class="submenu one">
+
+  <li class="n1"><a target="_blank"href="Projects_freyr.html">FREYR-1</a></li>
+  <li class="n2"><a target="_blank"href="Projects_serve.html">SERVe</a></li>
+  <li class="n3"><a target="_blank"href="Projects_3.html">PROJECT 3</a></li>
+		</ul>
+    </li>
+  
+
+	<li class="menu"><a target="_blank"href="team.html" data-hover="TEAM" class="hvr-grow">Team</a>
+  </li>	
+	
+	<li class="menu"><a target="_blank" href="https://solarmobil.wordpress.com/" data-hover="BLOG" class="hvr-grow">Blog</a>
+
+		</li>
+	
+	<li class="menu"><a target="_blank"href="Support.html" data-hover="SUPPORT" class="hvr-grow">Support Us</a>
+ <span></span>
+ <ul class="submenu three">
+
+  <li class="n1"><a target="_blank"href="Support.html">OUR SPONSORS</a></li>
+  <li class="n2"><a target="_blank"href="Support.html">JOIN US</a></li>
+  <li class="n3"><a target="_blank"href="Support.html">ADOPT A SOLAR CELL</a></li>
+    </ul>
+		</li>
+
+	<li class="menu"><a target="_blank"href="Contact.html" data-hover="CONTACT" class="hvr-grow">Contact</a></li>
+	</ul>
+	</div>
+	</div>
+<!-- END OF HEADER -->
+
+
+<div class="container">    
+<p class="head">Talk to us.</p>
+<form class="comment" action="mail.php" method="POST" onSubmit="return validate()">
+<p>Enter your message :<br><textarea required placeholder="A valid message to us!" name="message" rows="7" cols="25"></textarea> </p>
+<div class="details">
+<p>Name : <input class="info name" type="text" name="name" required placeholder="Enter Your name"> </p>
+<p>Email :<input id="email" class="info email" type="text" name="id" required placeholder="Enter a valid email address"> </p>
+<h4 id="result"></h4>
+</div>
+<br>
+<p class="btn_container">
+<input class="btn" type="submit" value="Send"><input class="btn" type="reset" value="Clear"></p>
+<p>Speak your mind.</p>
+</form>
+  
+
+    </div>
+    
+
+
+
+
+   
+    
+
+
+ <div id="contact">
+    <div class="contact text">CONTACT US</div>
+    <div class="contact info">
+        <div class="icon">
+            <a target="_blank"  href="https://www.facebook.com/SolarmobilMIT">Visit</a>
+            <img src="images/fb.png">
+           
+        </div>
+        <div class="icon">
+            <a target="_blank"  href="https://twitter.com/solarmobil_mit">Visit</a>
+            <img src="images/tw.png">
+            
+        </div>
+        <div class="icon">
+            <a target="_blank"  href="https://www.youtube.com/user/solarmobilmit">Visit</a>
+            <img src="images/yt.png">
+            
+        </div>
+        <div class="icon">
+            <a target="_blank"  href="https://solarmobil.wordpress.com/">Visit</a>
+            <img src="images/blog.png" >
+            </div>
+       <div class="icon"> 
+        <a target="_blank"  href="Contact.html">Visit</a>
+       <img src="images/mail.png">
+          </div>
+          <div class="icon"> 
+            <a target="_blank"  href="https://plus.google.com/102845822596809337947/videos">Visit</a>
+          <img src="images/g.png" >
+          </div>
+
+            <div style="clear: both;"></div>
+    <div>
+     
+     <p><a  >/SolarmobilMIT</a></p>
+     <p><a >/solarmobil_mit</a></p>
+     <p><a >/solarmobilmit</a></p>
+     <p><a  >wordpress</a></p>
+     <p><a >/SolarmobilMIT</a></p>
+     <p><a  >SolarMobil Manipal</a></p>
+     </div>
+    </div>
+    </div>
+    
+
+
+
+<div class="site_map">
+  <div>
+  <ul>
+    <li><a target="_blank"  href="About.html">ABOUT US</a></li>
+  </ul>
+  </div>
+  <div>
+    <ul>
+      <li><a target="_blank"  href="Projects_serve.html">PROJECTS</a>
+      
+          <li><a target="_blank"  href="Projects_freyr.html">Freyr-1</a></li>
+          <li><a target="_blank"  href="Projects_serve.html">SERVe</a></li>
+          <li><a target="_blank"  href="Projects_3.html">Project 3</a></li>
+      
+      </li>
+    </ul>
+  </div>
+  
+  <div>
+  <ul>
+    <li><a target="_blank"  href="team.html">TEAM</a></li>
+  </ul>
+  </div>
+  
+  <div>  
+    <ul>
+      <li><a target="_blank"  href="https://solarmobil.wordpress.com/">BLOG</a>
+      </li>
+    </ul>
+  </div>
+  <div>  
+    <ul>
+      <li><a target="_blank"  href="Support.html">SUPPORT</a>
+      
+          <li><a target="_blank"  href="Support.html">Our Sponsors</a></li>
+          <li><a target="_blank"  href="Support.html">Join us</a></li>
+          <li><a target="_blank"  href="Support.html">Adopt a Solar Cell</a></li>
+      
+      </li>
+    </ul>
+  </div>
+
+<div>
+  <ul>
+    <li><a target="_blank"  href="Contact.html">CONTACT US</a></li>
+  </ul>
+  </div>
+
+</div>
+
+</div>
+
+
+
+<div class="footer">
+
+    <a target="_blank"  href="Untitled-1.html"><img src="images/foot2.png"  alt="" /></a>
+      <p class="extra m"><a target="_blank"  href="https://www.behance.net/madebymj" >Designed by <i >@Manoj</i></a></p>
+      <p class="extra n"><a target="_blank"  href="http://neonovamarketing.com/" >NeoNova Marketing Solutions</a></p>
+      <p>Slider by wowslider.com</p>
+      <p class="cpyrt">Copyrights © 2015 Solarmobil reserved </p>
+    
+  
+</div>
+
+
+</body>
+</html>
