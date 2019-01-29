@@ -1,2 +1,3 @@
 # solarmobil-website-3
-Latest repo of the website
+
+The site is active without ajax component at: http://www.andrew.cmu.edu/user/mbhat/
